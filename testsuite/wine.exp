@@ -1,0 +1,6 @@
+set wine ""
+set exeext ""
+set test_sylvan ""
+set test_promela "yes"
+set test_dve "yes"
+set test_lps "yes"
