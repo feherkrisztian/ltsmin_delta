@@ -530,14 +530,13 @@ AC_CONFIG_FILES([
        src/pins-lib/Makefile
        src/pins-lib/por/Makefile
        src/util-lib/Makefile
-       src/gcf-tool/Makefile
        src/ltsmin-printtrace/Makefile
        src/ltsmin-compare/Makefile
        src/ltsmin-convert/Makefile
        src/ltsmin-reduce/Makefile
        src/ltsmin-reduce-dist/Makefile
        src/scripts/Makefile
-       src/pins2lts-seq/Makefile
+       src/pins2delta/Makefile
        src/pins-open/Makefile
        src/spg/Makefile
        src/dm/Makefile

@@ -94,7 +94,7 @@ endif
 #SUBDIRS += pins2lts-mc
 SUBDIRS += scripts
 
-SUBDIRS += pins2lts-seq
+SUBDIRS += pins2delta
 
 #this will throw error
 #SUBDIRS += pins2delta
