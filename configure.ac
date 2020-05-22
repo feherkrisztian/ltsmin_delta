@@ -530,6 +530,7 @@ AC_CONFIG_FILES([
        src/pins-lib/Makefile
        src/pins-lib/por/Makefile
        src/util-lib/Makefile
+       src/gcf-tool/Makefile
        src/ltsmin-printtrace/Makefile
        src/ltsmin-compare/Makefile
        src/ltsmin-convert/Makefile
