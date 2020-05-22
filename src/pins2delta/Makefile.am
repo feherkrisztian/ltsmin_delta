@@ -17,8 +17,8 @@ pins2jni_LDFLAGS  = -Wl,-E
 pins2jni_LDFLAGS  += $(AM_LDFLAGS)
 
 #dlopen
-pins2jni_SOURCES  += ../pins-lib/modules/dlopen-pins.c ../pins-lib/modules/dlopen-pins.h
-pins2jni_CPPFLAGS += -DPINS_DLL
+#pins2jni_SOURCES  += ../pins-lib/modules/dlopen-pins.c ../pins-lib/modules/dlopen-pins.h
+#pins2jni_CPPFLAGS += -DPINS_DLL
 
 #etf
 pins2jni_SOURCES  += ../pins-lib/modules/etf-pins.c ../pins-lib/modules/etf-pins.h
@@ -45,11 +45,11 @@ pins2jni_CPPFLAGS += -DPNML
 pins2jni_CFLAGS   += $(PNML_CFLAGS)
 endif
 
-#if HAVE_DVE
-#pins2jni_SOURCES  += ../pins-lib/modules/dve-pins.c ../pins-lib/modules/dve-pins.h
-#pins2jni_LDADD    += $(DVEC_LIBS)
-#pins2jni_CPPFLAGS += -DDIVINE $(DIVINE_CPPFLAGS)
-#pins2jni_LDFLAGS  += $(DIVINE_LDFLAGS)
-#endif
+if HAVE_DVE
+pins2jni_SOURCES  += ../pins-lib/modules/dve-pins.c ../pins-lib/modules/dve-pins.h
+pins2jni_LDADD    += $(DVEC_LIBS)
+pins2jni_CPPFLAGS += -DDIVINE $(DIVINE_CPPFLAGS)
+pins2jni_LDFLAGS  += $(DIVINE_LDFLAGS)
+endif
 
 nodist_EXTRA_pins2jni_SOURCES = automake-force-linker.cxx # req. by vset
