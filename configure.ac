@@ -528,7 +528,6 @@ AC_CONFIG_FILES([
        src/lts-lib/Makefile
        src/ltsmin-lib/Makefile
        src/pins-lib/Makefile
-       src/prob-lib/Makefile
        src/pins-lib/por/Makefile
        src/util-lib/Makefile
        src/gcf-tool/Makefile

@@ -64,7 +64,7 @@ endif
 SUBDIRS += pins-lib
 
 if HAVE_PROB
-SUBDIRS += prob-lib
+#SUBDIRS += prob-lib
 endif
 
 if HAVE_CADP

@@ -4,11 +4,7 @@ SEQ_CPPFLAGS = $(AM_CPPFLAGS)
 SEQ_CFLAGS   = $(AM_CFLAGS)
 
 LIBS  = ../pins-lib/libpins.la
-LIBS += ../vset-lib/libvset.la
-LIBS += ../mc-lib/libmc.la
 LIBS += $(top_builddir)/lib/libgnu.la
-
-PROB_LIB_LIBS = ../prob-lib/libprob.la
 
 bin_PROGRAMS = pins2jni
 
