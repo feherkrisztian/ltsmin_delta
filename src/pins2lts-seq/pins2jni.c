@@ -49,6 +49,7 @@ int main(int argc, char *argv[])
     for(i = 0; i < N; i++){
         printf("%d", src[i]);
     }
+    printf("\n\n");
 
     return 0;
 }
