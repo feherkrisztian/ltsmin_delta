@@ -92,8 +92,9 @@ if HAVE_SYLVAN
 #SUBDIRS += ldd2bdd
 endif
 #SUBDIRS += pins2lts-mc
-SUBDIRS += pins2lts-seq
 SUBDIRS += scripts
+
+SUBDIRS += pins2lts-seq
 
 #this will throw error
 #SUBDIRS += pins2delta
