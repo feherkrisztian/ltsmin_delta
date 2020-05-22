@@ -35,72 +35,115 @@
 #include <pins-lib/modules/dlopen-pins.h>
 #endif
 
+#define SPEC_POPT_OPTIONS_TEMP
+#define SPEC_POPT_OPTIONS_MAPA
+#define SPEC_POPT_OPTIONS_MCRL
+#define SPEC_POPT_OPTIONS_MCRL2
+#define SPEC_POPT_OPTIONS_LTSMIN_PBES
+#define SPEC_POPT_OPTIONS_ETF
+#define SPEC_POPT_OPTIONS_DIVINE
+#define SPEC_POPT_OPTIONS_SPINS
+#define SPEC_POPT_OPTIONS_OPAAL
+#define SPEC_POPT_OPTIONS_PNML
+#define SPEC_POPT_OPTIONS_PROB
+#define SPEC_POPT_OPTIONS_PINS_DLL
 
 #if defined(MAPA)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, mapa_options, 0, "Scoop options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, mapa_options, 0, "Scoop options", NULL }
+#define SPEC_POPT_OPTIONS_MAPA { NULL, 0, POPT_ARG_INCLUDE_TABLE, mapa_options, 0, "Scoop options", NULL },
 #define SPEC_MT_SAFE 0
 #define SPEC_REL_PERF 1
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 1
 #endif
 #if defined(MCRL)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, mcrl_options, 0, "mCRL options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, mcrl_options, 0, "mCRL options", NULL }
+#define SPEC_POPT_OPTIONS_MCRL { NULL, 0, POPT_ARG_INCLUDE_TABLE, mcrl_options, 0, "mCRL options", NULL },
 #define SPEC_MT_SAFE 0
 #define SPEC_REL_PERF 1
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 1
 #endif
 #if defined(MCRL2)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, mcrl2_options, 0, "mCRL2 options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, mcrl2_options, 0, "mCRL2 options", NULL }
+#define SPEC_POPT_OPTIONS_MCRL2 { NULL, 0, POPT_ARG_INCLUDE_TABLE, mcrl2_options, 0, "mCRL2 options", NULL },
 #define SPEC_MT_SAFE 0
 #define SPEC_REL_PERF 1
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 1
 #endif
 #if defined(LTSMIN_PBES)
-#define SPEC_POPT_OPTIONS { NULL, 0 , POPT_ARG_INCLUDE_TABLE, pbes_options , 0 , "PBES options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0 , POPT_ARG_INCLUDE_TABLE, pbes_options , 0 , "PBES options", NULL }
+#define SPEC_POPT_OPTIONS_LTSMIN_PBES { NULL, 0 , POPT_ARG_INCLUDE_TABLE, pbes_options , 0 , "PBES options", NULL },
 #define SPEC_MT_SAFE 0
 #define SPEC_REL_PERF 1
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 1
 #endif
 #if defined(ETF)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, etf_options, 0, "ETF options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, etf_options, 0, "ETF options", NULL }
+#define SPEC_POPT_OPTIONS_ETF { NULL, 0, POPT_ARG_INCLUDE_TABLE, etf_options, 0, "ETF options", NULL },
 #define SPEC_MT_SAFE 1
 #define SPEC_REL_PERF 100
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 0
 #endif
 #if defined(DIVINE)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, dve_options, 0, "DiVinE options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, dve_options, 0, "DiVinE options", NULL }
+#define SPEC_POPT_OPTIONS_DIVINE { NULL, 0, POPT_ARG_INCLUDE_TABLE, dve_options, 0, "DiVinE options", NULL },
 #define SPEC_MT_SAFE 1
 #define SPEC_REL_PERF 100
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 0
 #endif
 #if defined(SPINS)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, prom_options, 0, "Promela options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, prom_options, 0, "Promela options", NULL }
+#define SPEC_POPT_OPTIONS_SPINS { NULL, 0, POPT_ARG_INCLUDE_TABLE, prom_options, 0, "Promela options", NULL },
 #define SPEC_MT_SAFE 1
 #define SPEC_REL_PERF 100
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 0
 #endif
 #if defined(OPAAL)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, opaal_options, 0, "Opaal options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, opaal_options, 0, "Opaal options", NULL }
+#define SPEC_POPT_OPTIONS_OPAAL { NULL, 0, POPT_ARG_INCLUDE_TABLE, opaal_options, 0, "Opaal options", NULL },
 #define SPEC_MT_SAFE 1
 #define SPEC_REL_PERF 10
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 0
 #endif
 #if defined(PNML)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, pnml_options, 0, "PNML options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, pnml_options, 0, "PNML options", NULL }
+#define SPEC_POPT_OPTIONS_PNML { NULL, 0, POPT_ARG_INCLUDE_TABLE, pnml_options, 0, "PNML options", NULL },
 #define SPEC_MT_SAFE 1
 #define SPEC_REL_PERF 100
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 1
 #endif
 #if defined(PROB)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, prob_options, 0, "ProB options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, prob_options, 0, "ProB options", NULL }
+#define SPEC_POPT_OPTIONS_PROB { NULL, 0, POPT_ARG_INCLUDE_TABLE, prob_options, 0, "ProB options", NULL },
 #define SPEC_MT_SAFE 1
 #define SPEC_REL_PERF 1
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 1
 #endif
 #if defined(PINS_DLL)
-#define SPEC_POPT_OPTIONS { NULL, 0, POPT_ARG_INCLUDE_TABLE, pins_plugin_options, 0, "PINS plugin options", NULL }
+#define SPEC_POPT_OPTIONS_TEMP { NULL, 0, POPT_ARG_INCLUDE_TABLE, pins_plugin_options, 0, "PINS plugin options", NULL }
+#define SPEC_POPT_OPTIONS_PINS_DLL { NULL, 0, POPT_ARG_INCLUDE_TABLE, pins_plugin_options, 0, "PINS plugin options", NULL },
 #define SPEC_MT_SAFE 0
 #define SPEC_REL_PERF 10
 #define SPEC_MAYBE_AND_FALSE_IS_FALSE 0
+#endif
+
+#if defined(ALL_FRONTENDS)
+
+#define SPEC_POPT_OPTIONS SPEC_POPT_OPTIONS_MAPA \
+ SPEC_POPT_OPTIONS_MCRL \
+ SPEC_POPT_OPTIONS_MCRL2 \
+ SPEC_POPT_OPTIONS_LTSMIN_PBES \
+ SPEC_POPT_OPTIONS_ETF \
+ SPEC_POPT_OPTIONS_DIVINE \
+ SPEC_POPT_OPTIONS_SPINS \
+ SPEC_POPT_OPTIONS_OPAAL \
+ SPEC_POPT_OPTIONS_PNML \
+ SPEC_POPT_OPTIONS_PROB \
+ SPEC_POPT_OPTIONS_PINS_DLL
+
+#else
+
+#define SPEC_POPT_OPTIONS SPEC_POPT_OPTIONS_TEMP
+
 #endif
 
 #endif
