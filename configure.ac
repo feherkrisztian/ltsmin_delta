@@ -538,8 +538,6 @@ AC_CONFIG_FILES([
        src/ltsmin-reduce-dist/Makefile
        src/scripts/Makefile
        src/pins2delta/Makefile
-       src/pins-open/Makefile
-       src/spg/Makefile
        src/dm/Makefile
        src/ce/Makefile
        src/tests/Makefile

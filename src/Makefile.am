@@ -68,7 +68,7 @@ if HAVE_PROB
 endif
 
 if HAVE_CADP
-SUBDIRS += pins-open
+#SUBDIRS += pins-open
 endif
 #SUBDIRS += pins2lts-dist
 #SUBDIRS += torx
