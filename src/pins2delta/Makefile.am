@@ -11,7 +11,6 @@ bin_PROGRAMS = pins2jni
 pins2jni_SOURCES  = pins2jni.c
 pins2jni_LDADD    = $(LIBS) $(LIBLTDL)
 pins2jni_CPPFLAGS = $(SEQ_CPPFLAGS) $(LTDLINCL)
-pins2jni_CPPFLAGS += -DALL_FRONTENDS
 pins2jni_CFLAGS   = $(SEQ_CFLAGS)
 pins2jni_LDFLAGS  = -Wl,-E
 pins2jni_LDFLAGS  += $(AM_LDFLAGS)
