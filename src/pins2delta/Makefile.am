@@ -8,7 +8,7 @@ LIBS += $(top_builddir)/lib/libgnu.la
 
 lib_LTLIBRARIES = libpins2jni.la
 
-pins2jni_la_SOURCES  = pins2jni.c
+pins2jni_la_SOURCES  = libpins2jni.c
 pins2jni_la_LDADD    = $(LIBS) $(LIBLTDL)
 pins2jni_la_CPPFLAGS = $(SEQ_CPPFLAGS) $(LTDLINCL)
 pins2jni_la_CFLAGS   = $(SEQ_CFLAGS)
