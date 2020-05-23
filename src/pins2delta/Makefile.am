@@ -50,3 +50,4 @@ pins2jni_la_SOURCES  += ../pins-lib/modules/dve-pins.c ../pins-lib/modules/dve-p
 pins2jni_la_LDADD    += $(DVEC_LIBS)
 pins2jni_la_CPPFLAGS += -DDIVINE $(DIVINE_CPPFLAGS)
 pins2jni_la_LDFLAGS  += $(DIVINE_LDFLAGS)
+endif
