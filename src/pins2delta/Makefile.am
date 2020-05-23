@@ -6,7 +6,7 @@ SEQ_CFLAGS   = $(AM_CFLAGS)
 LIBS  = ../pins-lib/libpins.la
 LIBS += $(top_builddir)/lib/libgnu.la
 
-lib_LTLIBRARIES = pins2jni.la
+lib_LTLIBRARIES = libpins2jni.la
 
 pins2jni_la_SOURCES  = pins2jni.c
 pins2jni_la_LDADD    = $(LIBS) $(LIBLTDL)
