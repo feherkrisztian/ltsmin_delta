@@ -27,8 +27,9 @@ static struct poptOption options[] = {
     SPEC_POPT_OPTIONS 
 };
 
-int main(int argc, char *argv[])
+model_t getModel(char *argv[])
 {
+    int argc = 2;
     const char *files[2];
     HREinitBegin(argv[0]); // the organizer thread is called after the binary
     HREaddOptions(options,"");
@@ -39,17 +40,5 @@ int main(int argc, char *argv[])
     GBsetChunkMap (model, simple_table_factory_create());
     GBloadFile(model,files[0],&model);
 
-    lts_type_t ltstype=GBgetLTStype(model);
-    int N=lts_type_get_state_length(ltstype);
-
-    int src[N];
-    GBgetInitialState(model,src);
-
-    int i;
-    for(i = 0; i < N; i++){
-        printf("%d", src[i]);
-    }
-    printf("\n\n");
-
-    return 0;
+    return model;
 }
