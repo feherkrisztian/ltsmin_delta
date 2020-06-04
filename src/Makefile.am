@@ -37,7 +37,7 @@ endif
 # dependency matrix lib
 SUBDIRS += dm
 # bignum lib
-SUBDIRS += bignum
+#SUBDIRS += bignum
 
 SUBDIRS += gcf-tool
 
@@ -64,39 +64,43 @@ endif
 SUBDIRS += pins-lib
 
 if HAVE_PROB
-SUBDIRS += prob-lib
+#SUBDIRS += prob-lib
 endif
 
 if HAVE_CADP
-SUBDIRS += pins-open
+#SUBDIRS += pins-open
 endif
-SUBDIRS += pins2lts-dist
-SUBDIRS += torx
+#SUBDIRS += pins2lts-dist
+#SUBDIRS += torx
 
 # multi-core lib, lockless data structures and a load balancer
-SUBDIRS += mc-lib
+#SUBDIRS += mc-lib
 
 # vset (BDD/MDD) lib
-SUBDIRS += vset-lib
+#SUBDIRS += vset-lib
 
 # symbolic parity game lib
-SUBDIRS += spg-lib
+#SUBDIRS += spg-lib
 
-SUBDIRS += spg
+#SUBDIRS += spg
 
 # multi-core lib, lockless data structures and a load balancer
-SUBDIRS += mc-lib
+#SUBDIRS += mc-lib
 
-SUBDIRS += pins2lts-sym
+#SUBDIRS += pins2lts-sym
 if HAVE_SYLVAN
-SUBDIRS += ldd2bdd
+#SUBDIRS += ldd2bdd
 endif
-SUBDIRS += pins2lts-mc
-SUBDIRS += pins2lts-seq
-
+#SUBDIRS += pins2lts-mc
 SUBDIRS += scripts
 
-SUBDIRS += tests
+SUBDIRS += pins2delta
+
+#this will throw error
+#SUBDIRS += pins2delta
+
+
+#SUBDIRS += tests
 
 # make
 .DELETE_ON_ERROR:

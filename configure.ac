@@ -513,6 +513,7 @@ AC_CONFIG_COMMANDS_POST(
                                          --disable-shared dnl
                                          --libdir='$(eval echo "$pkglibdir")'"])
 
+#some of the makefiles has been removed by me
 AC_CONFIG_FILES([
        www/_config.yml
        Makefile
@@ -526,37 +527,19 @@ AC_CONFIG_FILES([
        src/lts-io/Makefile
        src/lts-lib/Makefile
        src/ltsmin-lib/Makefile
-       src/mc-lib/Makefile
        src/pins-lib/Makefile
-       src/prob-lib/Makefile
        src/pins-lib/por/Makefile
        src/util-lib/Makefile
-       src/vset-lib/Makefile
-       src/spg-lib/Makefile
        src/gcf-tool/Makefile
-       src/ldd2bdd/Makefile
        src/ltsmin-printtrace/Makefile
        src/ltsmin-compare/Makefile
        src/ltsmin-convert/Makefile
        src/ltsmin-reduce/Makefile
        src/ltsmin-reduce-dist/Makefile
-       src/pins2lts-dist/Makefile
-       src/pins2lts-dist/gcc/Makefile
-       src/pins2lts-dist/mpicc/Makefile
-       src/pins2lts-mc/parallel/Makefile
-       src/pins2lts-mc/algorithm/Makefile
-       src/pins2lts-mc/Makefile
-       src/pins2lts-seq/Makefile
-       src/pins2lts-sym/Makefile
-       src/pins2lts-sym/maxsum/Makefile
-       src/pins-open/Makefile
-       src/spg/Makefile
-       src/dm/Makefile
-       src/bignum/Makefile
-       src/ce/Makefile
-       src/tests/wine-wrapper.sh
-       src/torx/Makefile
        src/scripts/Makefile
+       src/pins2delta/Makefile
+       src/dm/Makefile
+       src/ce/Makefile
        src/tests/Makefile
        src/tests/gcc/Makefile
        src/tests/mpicc/Makefile
